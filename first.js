@@ -9,5 +9,7 @@ const { chromium } = require("playwright");
         });
     const page = await browser.newPage();
     await page.goto("http://google.com");
+
+    // Close browser
     await browser.close();
 })();
